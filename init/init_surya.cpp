@@ -86,8 +86,8 @@ void set_device_fp() {
     string source_partitions[] = { "", "bootimage", "odm.", "product.",
                                    "system", "system_ext.", "vendor." };
 
-    string fp = "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys";
-    string desc = "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys";
+    string fp = "google/raven/raven:13/TQ1A.230105.002/9325679:user/release-keys";
+    string desc = "raven-user 13 TQ1A.230105.002 9325679 release-keys";
 
     for (const string &source : source_partitions) {
         set_ro_build_prop(source, "fingerprint", fp, false);
